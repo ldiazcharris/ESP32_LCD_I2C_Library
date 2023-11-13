@@ -54,7 +54,11 @@ void app_main()
 
         // Se escribe el texto en pantalla
         // Text is written on the screen
-        lcd_write_string("Hola Mundo..."); 
+        lcd_write_string("Hola Mundo...");
+
+        // Se cambia el color de la pantalla a amarillo fluorescente
+        // The screen color changes to fluorescent yellow
+        setRGB(204, 255, 0);
         
         vTaskDelay(3000/portTICK_PERIOD_MS); 
         
@@ -62,13 +66,17 @@ void app_main()
         // The LCD screen goes blank
         lcd_clear(); 
         
-        // Se coloca el cursor en la posición (1, 0) de la pantalla
-        // The cursor is placed at position (1, 0) on the screen
-        lcd_cursor(1, 0); 
+        // Se coloca el cursor en la posición (1, 3) de la pantalla
+        // The cursor is placed at position (1, 3) on the screen
+        lcd_cursor(1, 3); 
         
         // Se escribe el texto en pantalla
         // Text is written on the screen
-        lcd_write_string("...Chao Mundo");  
+        lcd_write_string("...Chao Mundo");
+
+        // Se cambia el color de la pantalla a rojo
+        // The screen color changes to red
+        setRGB(255, 0, 0);
         
         vTaskDelay(3000/portTICK_PERIOD_MS);
     }
