@@ -90,11 +90,11 @@ void lcd_init()
     // 0010 0000 -> 0x20  (DMBLNK to 1, ie blinky mode)
     setReg(REG_MODE2, 0x20);
 
-    setRGB(255,255,255);
+    lcd_set_RGB(255,255,255);
     
 }
 
-void setRGB(unsigned char r, unsigned char g, unsigned char b)
+void lcd_set_RGB(unsigned char r, unsigned char g, unsigned char b)
 {
     setReg(REG_RED, r);
     setReg(REG_GREEN, g);
