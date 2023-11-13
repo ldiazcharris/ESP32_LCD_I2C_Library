@@ -1,5 +1,5 @@
 # LCD_I2C_Grove_Library
-This library contains the basic functions for controlling the Grove Backlight V4.0 LCD, using the ESP-IDF framework for the ESP-WROOM-32. This library is based on the Arduino reference library available at https://www.arduino.cc/reference/en/libraries/grove-lcd-rgb-backlight/ and another references.
+This library contains the basic functions for controlling the Grove Backlight V4.0 LCD 16x2, using the ESP-IDF framework for the ESP-WROOM-32. This library is based on the Arduino reference library available at https://www.arduino.cc/reference/en/libraries/grove-lcd-rgb-backlight/ and another references.
 
 This library was adapted from diferent source codes:
 - https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight
@@ -7,6 +7,15 @@ This library was adapted from diferent source codes:
 - https://controllerstech.com/i2c-lcd-in-stm32/
 
 This software is licensed under The MIT License. Check License.txt for more information.
+
+This library implements the following functions:
+
+To initialize the LCD Functions: lcd_init()
+To write one character: lcd_write_char(char character);
+To put the cursor on a desired position of the LCD: lcd_cursor(uint8_t row, uint8_t col);
+To write a string of characters on the LCD: lcd_write_string(char *str);
+To clean the LCD: lcd_clear();
+To change the color of the LCD Backlight: setRGB(unsigned char r, unsigned char g, unsigned char b);
 
 # Installation
 This library implements the pins `GPIO_NUM_21` and `GPIO_NUM_22` as SDA and SCL I2C pins respectively. Be careful not to use these pins for other purposes when using this library.
@@ -65,4 +74,6 @@ void app_main()
     }
 }
 ~~~
+
+# Disclaimer
 
