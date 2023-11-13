@@ -1,5 +1,5 @@
 # LCD_I2C_Grove_Library
-This library contains the basic functions for controlling the Grove Backlight V4.0 LCD, using the ESP-IDF frameword for the ESP-WROOM-32. This library is based on the Arduino reference library available at https://www.arduino.cc/reference/en/libraries/grove-lcd-rgb-backlight/ and another references.
+This library contains the basic functions for controlling the Grove Backlight V4.0 LCD, using the ESP-IDF framework for the ESP-WROOM-32. This library is based on the Arduino reference library available at https://www.arduino.cc/reference/en/libraries/grove-lcd-rgb-backlight/ and another references.
 
 This library was adapted from diferent source codes:
 - https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight
