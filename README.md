@@ -76,4 +76,4 @@ void app_main()
 ~~~
 
 # Disclaimer
-
+At this point, this library does not implement all the functions available at: https://www.arduino.cc/reference/en/libraries/grove-lcd-rgb-backlight/. Only functions for basic LCD control.
