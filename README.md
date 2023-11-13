@@ -11,11 +11,11 @@ This software is licensed under The MIT License. Check License.txt for more info
 This library implements the following functions:
 
 - To initialize the LCD Functions: lcd_init()
-- To write one character: lcd_write_char(char character);
-- To put the cursor on a desired position of the LCD: lcd_cursor(uint8_t row, uint8_t col);
-- To write a string of characters on the LCD: lcd_write_string(char *str);
-- To clean the LCD: lcd_clear();
-- To change the color of the LCD Backlight: setRGB(unsigned char r, unsigned char g, unsigned char b);
+- To write one character: lcd_write_char(char character)
+- To put the cursor on a desired position of the LCD: lcd_cursor(uint8_t row, uint8_t col)
+- To write a string of characters on the LCD: lcd_write_string(char *str)
+- To clean the LCD: lcd_clear()
+- To change the color of the LCD Backlight: setRGB(unsigned char r, unsigned char g, unsigned char b)
 
 # Installation
 This library implements the pins `GPIO_NUM_21` and `GPIO_NUM_22` as SDA and SCL I2C pins respectively. Be careful not to use these pins for other purposes when using this library.
