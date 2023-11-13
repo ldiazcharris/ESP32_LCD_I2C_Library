@@ -38,13 +38,13 @@ void app_main()
     // LCD screen initialization
     lcd_init(); 
     
-    // Se pone la pantalla LCD en blanco
+    // Se limpia la pantalla
     // The LCD screen goes blank
     lcd_clear(); 
    
     while(1){
 
-        // Se pone la pantalla LCD en blanco cada nuevo ciclo
+        // Se limpia la pantalla cada nuevo ciclo
         // The LCD screen goes blank every new cycle
         lcd_clear(); 
         
@@ -58,7 +58,7 @@ void app_main()
         
         vTaskDelay(3000/portTICK_PERIOD_MS); 
         
-        // Se pone la pantalla LCD en blanco
+        // Se limpia la pantalla
         // The LCD screen goes blank
         lcd_clear(); 
         
