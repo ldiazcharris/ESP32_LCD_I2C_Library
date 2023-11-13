@@ -58,7 +58,7 @@ void app_main()
 
         // Se cambia el color de la pantalla a amarillo fluorescente
         // The screen color changes to fluorescent yellow
-        setRGB(204, 255, 0);
+        lcd_set_RGB(204, 255, 0);
         
         vTaskDelay(3000/portTICK_PERIOD_MS); 
         
@@ -76,7 +76,7 @@ void app_main()
 
         // Se cambia el color de la pantalla a rojo
         // The screen color changes to red
-        setRGB(255, 0, 0);
+        lcd_set_RGB(255, 0, 0);
         
         vTaskDelay(3000/portTICK_PERIOD_MS);
     }
