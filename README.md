@@ -8,7 +8,7 @@ This library implements the following functions:
 - To write a string of characters on the LCD: `lcd_write_string(char *str)`
 - To write a string of characters on the LCD indicating the position of a row/column: `lcd_write(uint8_t row, uint8_t column, char *str)`
 - To clean the LCD: `lcd_clear()`
-- To change the color of the LCD Backlight: `setRGB(unsigned char r, unsigned char g, unsigned char b)`
+- To change the color of the LCD Backlight: `lcd_set_RGB(unsigned char r, unsigned char g, unsigned char b)`
 - To turn off the display: `lcd_off()`
 - To turn on the display: `lcd_on()`
 
