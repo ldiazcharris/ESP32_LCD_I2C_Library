@@ -124,6 +124,13 @@ void lcd_write_string(char *str)
 		lcd_write_char(*str++);
 }
 
+void lcd_write(uint8_t row, uint8_t column, char *str)
+{
+    lcd_cursor(row, column);
+	while(*str) 
+		lcd_write_char(*str++);
+}
+
 void lcd_clear()
 {
 	lcd_command(0x01);
@@ -146,3 +153,13 @@ static esp_err_t i2c_chanell_init()
     return i2c_driver_install(I2C_NUM_0, conf.mode, 0, 0, 0);
 }
 
+void lcd_on()
+{
+    lcd_command(0x08 | 0x04); //Display On
+}
+
+void lcd_off()
+{
+    lcd_command(0x08 | 0x00); //Display Off
+    lcd_set_RGB(0, 0, 0);
+}
